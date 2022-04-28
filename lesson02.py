@@ -20,4 +20,4 @@ print(MESSAGE)
 # 変数の埋め込み
 name = "nob"
 score = 31.6
-print("name:{0} score:{1}".format(name,score))
+print("name:{0} score:{1}".format(name, score))

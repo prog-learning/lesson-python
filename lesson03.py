@@ -6,11 +6,11 @@ print(x + 2)
 print(x - 2)
 print(x * 2)
 print(x / 2)
-print(x // 2) # 商
-print(x % 2) # 余り
-print(x ** 2)
+print(x // 2)  # 商
+print(x % 2)  # 余り
+print(x**2)
 
-x+=100
+x += 100
 print(x)
 
 # 論理演算子
