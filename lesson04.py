@@ -1,13 +1,19 @@
-# Scriptを実行 $ python3 lesson04.py
+# Scriptを実行 $ python lesson04.py
 
-# if文
-score = int(input("score ? "))
-if score > 80:
-    print("Great!")
-elif score > 60:
-    print("Good!")
-else:
-    print("So So!")
+# 演算子
+x = 5
+print(x + 2)
+print(x - 2)
+print(x * 2)
+print(x / 2)
+print(x // 2)  # 商
+print(x % 2)  # 余り
+print(x**2)
 
-# 条件演算子
-print("Great!" if score > 80 else "so so! ..")
+x += 100
+print(x)
+
+# 論理演算子
+print(True and False)
+print(True or False)
+print(not True)

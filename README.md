@@ -2,9 +2,58 @@
 
 ## Setup
 
+バージョン管理ツールのインストー
+
 ```sh
-brew install python3
+brew install pyenv
 ```
+
+終わったらこれを使って Python をインストール
+
+```sh
+pyenv install -l
+```
+
+でバージョンが見れるのでお好みで
+
+```sh
+pyenv install 3.10.5
+```
+
+終わったら
+
+```sh
+pyenv versions
+```
+
+で確認できるが,指定されてないので
+
+```sh
+pyenv global 3.10.5
+```
+
+とすれば OK
+
+最後に path を通して
+
+```sh
+echo 'eval "$(pyenv init --path)"' >> ~/.zprofile
+echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+```
+
+ターミナルを再起動して
+
+```sh
+python -V
+```
+
+もしくは
+
+```sh
+python --version
+```
+
+インストールしたバージョンが表示されれば準備完了 🎉
 
 ## Formatter の設定
 
@@ -23,6 +72,10 @@ brew install python3
 ```
 
 私は black を選択した
+
+```
+pip install black
+```
 
 ## Reference
 
